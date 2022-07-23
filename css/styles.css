@@ -261,9 +261,7 @@ img {
 }
 .team-list-icon {
   display: flex;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-top: 16px;
+  justify-content: center;
 }
 .team-icon-link {
   display: flex;
@@ -482,6 +480,7 @@ img {
 }
 .footer-list-icon {
   display: flex;
+  justify-content: center;
 }
 .footer-item-icon:not(:last-child) {
   margin-right: 10px;

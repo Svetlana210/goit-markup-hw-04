@@ -153,11 +153,7 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/main-page/bgimg.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -270,20 +266,25 @@ img {
   padding-top: 16px;
 }
 .team-icon-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--icons-color);
+  color: var(--icons-color);
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: var(--accent-text-color);
-  border-radius: 50%;
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 .team-icon {
-  margin: 12px;
+  fill: currentColor;
 }
+/* .team-icon {
+  margin: 12px;
+} */
 .team-item-icon:not(:last-child) {
   margin-right: 10px;
 }
@@ -304,10 +305,10 @@ img {
   display: flex;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  background-color: var(--primary-white-color);
   color: var(--icons-color);
 }
 .clients-link:hover,
@@ -401,8 +402,11 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
 }
-.project-item:hover,
-.project-item:focus {
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
     0 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -483,19 +487,20 @@ img {
   margin-right: 10px;
 }
 .footer-icon-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--icons-color);
+  color: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--accent-text-color);
-  border-radius: 50%;
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 .footer-icon {
-  margin: 12px;
+  fill: currentColor;
 }
